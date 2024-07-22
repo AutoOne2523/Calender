@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Calendar Widget</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="calendar"></div>
+
+    <div id="event-form">
+        <h2>Add Event</h2>
+        <form id="addEventForm">
+            <label for="eventTitle">Title:</label>
+            <input type="text" id="eventTitle" name="title" required>
+            <label for="eventDate">Date:</label>
+            <input type="date" id="eventDate" name="date" required>
+            <button type="submit">Add Event</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.0/main.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.0/main.min.css">
+    <script src="script.js"></script>
+</body>
+</html>
